@@ -132,20 +132,6 @@ public final class Utils {
     }
 
     /**
-     * Генерация сообщения ошибки на домен не из белого списка.
-     *
-     * @param provider Название провейдера
-     * @param email    Почта пользователя
-     * @return сообщение об ошибке
-     */
-    public static String toHostedDomainErrorMessage(final String provider, final String email) {
-        return String.format(
-            "Ваш аккаунт не подходит для авторизации через социальную сеть (%s) с почтой (%s).",
-            provider,
-            email);
-    }
-
-    /**
      * Получение случайной строки.
      *
      * @return Случайная строка
